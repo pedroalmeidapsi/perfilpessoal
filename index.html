@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profissional - Estudante de Psicologia UFPB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #111827 100%);
+        }
+        .card-bg {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #facc15, transparent);
+            height: 2px;
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+    <!-- Header/Navigation -->
+    <nav class="fixed top-0 w-full z-50 card-bg border-b border-white/20">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl font-bold text-white">Pedro Almeida</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="text-white hover:text-yellow-300 transition-colors">Início</a>
+                    <a href="#sobre" class="text-white hover:text-yellow-300 transition-colors">Sobre</a>
+                    <a href="#experiencias" class="text-white hover:text-yellow-300 transition-colors">Experiências</a>
+                    <a href="#publicacoes" class="text-white hover:text-yellow-300 transition-colors">Publicações</a>
+                    <a href="#contato" class="text-white hover:text-yellow-300 transition-colors">Contato</a>
+                </div>
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#inicio" class="block text-white hover:text-yellow-300 transition-colors py-2">Início</a>
+                <a href="#sobre" class="block text-white hover:text-yellow-300 transition-colors py-2">Sobre</a>
+                <a href="#experiencias" class="block text-white hover:text-yellow-300 transition-colors py-2">Experiências</a>
+                <a href="#publicacoes" class="block text-white hover:text-yellow-300 transition-colors py-2">Publicações</a>
+                <a href="#contato" class="block text-white hover:text-yellow-300 transition-colors py-2">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 pb-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <div class="w-48 h-48 mx-auto mb-6 rounded-full border-4 border-yellow-400 overflow-hidden bg-gray-300 flex items-center justify-center">
+                    <div style="position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; border-radius: 50%;"
+                            src="https://www.canva.com/design/DAGXrpXcc3c/jJmlGOjcUx0Z4RVUWc__nQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Pedro Almeida</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-yellow-300">Estudante de Psicologia</h2>
+                <p class="text-xl md:text-2xl text-yellow-300 mb-2">Formando pela UFPB</p>
+                <p class="text-lg text-gray-300 mb-6">Experiência em Psicoterapia Individual, Atendimento de Urgência psicológica e Psicodiagnóstico (Avaliação Psicológica no contexto clínico)</p>
+                <div class="card-bg rounded-lg p-6 max-w-2xl mx-auto border border-white/20">
+                    <p class="text-yellow-300 font-semibold mb-2">🎓 Status Acadêmico</p>
+                    <p class="text-white">Estou me formando e ainda não posso abrir agenda para atendimentos, mas estou muito próximo da conclusão do curso!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Sobre Mim</h2>
+            <div class="section-divider mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-4">
+                        <i class="fas fa-graduation-cap mr-2"></i>Formação Acadêmica
+                    </h3>
+                    <p class="text-gray-200 mb-4">Graduando em Psicologia pela Universidade Federal da Paraíba (UFPB), atualmente no último período do curso.</p>
+                    <p class="text-gray-200">Focado em desenvolver competências sólidas em avaliação psicológica e psicoterapia humanística.</p>
+                </div>
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-4">
+                        <i class="fas fa-heart mr-2"></i>Áreas de Interesse
+                    </h3>
+                    <ul class="text-gray-200 space-y-2">
+                        <li>• Avaliação Psicológica Clínica (Psicodiagnóstico)</li>
+                        <li>• Psicologia do Desenvolvimento (TEA)</li>
+                        <li>• Abordagem Centrada na Pessoa</li>
+                        <li>• Psicoterapia Individual</li>
+                        <li>• Atendimento de Urgência</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiências Section -->
+    <section id="experiencias" class="py-16 px-4 bg-black/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Experiências Profissionais</h2>
+            <div class="section-divider mb-12"></div>
+            <div class="space-y-8">
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-bold text-yellow-300">Estagiário - Clínica Escola de Psicologia UFPB</h3>
+                        <span class="text-gray-400 text-sm">Atual</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-white mb-2">
+                                <i class="fas fa-user-friends mr-2"></i>Psicoterapia Individual
+                            </h4>
+                            <p class="text-gray-300">Atendimento psicoterapêutico utilizando a Abordagem Centrada na Pessoa, desenvolvendo habilidades em escuta ativa e facilitação do processo terapêutico.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white mb-2">
+                                <i class="fas fa-ambulance mr-2"></i>Plantão Psicológico - NAEPSI
+                            </h4>
+                            <p class="text-gray-300">Atendimento psicológico de urgência, oferecendo suporte imediato em situações de crise e desenvolvendo competências em intervenção breve.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-bold text-yellow-300">Estagiário - Programa UAB UFPB</h3>
+                        <span class="text-gray-400 text-sm">Atual</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Prestação de apoio psicopedagógico, administrativo e organizacional no programa de Universidade Aberta do Brasil.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Psicopedagogia</span>
+                        <span class="bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Gestão Administrativa</span>
+                        <span class="bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Organização</span>
+                    </div>
+                </div>
+
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-4">
+                        <i class="fas fa-clipboard-list mr-2"></i>Experiência em Avaliação Psicológica
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-white mb-2">Contexto Clínico</h4>
+                            <p class="text-gray-300">Experiência sólida em psicodiagnóstico, aplicação e interpretação de instrumentos psicológicos para avaliação clínica.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white mb-2">Mães de Crianças com TEA</h4>
+                            <p class="text-gray-300">Experiência específica na avaliação psicológica de mães de crianças com Transtorno do Espectro Autista, compreendendo as demandas familiares.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publicações Section -->
+    <section id="publicacoes" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Publicações Acadêmicas</h2>
+            <div class="section-divider mb-12"></div>
+            <div class="card-bg rounded-lg p-8 border border-white/20 text-center hover-lift">
+                <i class="fas fa-book-open text-4xl text-yellow-300 mb-4"></i>
+                <h3 class="text-xl font-bold text-white mb-4">Área de Avaliação Psicológica</h3>
+                <p class="text-gray-300 mb-6">Possuo algumas publicações acadêmicas na área de avaliação psicológica, contribuindo para o desenvolvimento científico da área.</p>
+                <a href="https://lattes.cnpq.br/8623038555393354" target="_blank" class="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-3 px-6 rounded-lg transition-colors">
+                    <i class="fas fa-external-link-alt mr-2"></i>
+                    Acessar Currículo Lattes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-16 px-4 bg-black/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Contato</h2>
+            <div class="section-divider mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-6">
+                        <i class="fas fa-envelope mr-2"></i>Entre em Contato
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fab fa-instagram text-yellow-300 w-6 mr-3"></i>
+                            <a href="https://instagram.com/pedroalmeida.psi" target="_blank" class="text-gray-300 hover:text-yellow-300 transition-colors">@pedroalmeida.psi</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-300 w-6 mr-3"></i>
+                            <a href="mailto:psi.phan@gmail.com" class="text-gray-300 hover:text-yellow-300 transition-colors">psi.phan@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin text-yellow-300 w-6 mr-3"></i>
+                            <a href="https://www.linkedin.com/in/pedro-almeida-4712a3235" target="_blank" class="text-gray-300 hover:text-yellow-300 transition-colors">Pedro Almeida</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bg rounded-lg p-8 border border-white/20 hover-lift">
+                    <h3 class="text-xl font-bold text-yellow-300 mb-6">
+                        <i class="fas fa-info-circle mr-2"></i>Informações Importantes
+                    </h3>
+                    <div class="bg-yellow-400/10 border border-yellow-400/30 rounded-lg p-4">
+                        <p class="text-yellow-300 font-semibold mb-2">
+                            <i class="fas fa-clock mr-2"></i>Status Profissional
+                        </p>
+                        <p class="text-white text-sm">Atualmente em formação acadêmica. Ainda não estou habilitado para atendimentos particulares, mas estou muito próximo da conclusão do curso!</p>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="https://instagram.com/pedroalmeida.psi" target="_blank" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-3 px-6 rounded-lg transition-colors">
+                            <i class="fab fa-instagram mr-2"></i>
+                            Enviar Mensagem
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-white/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-white mb-2">Pedro Almeida</h3>
+                    <p class="text-gray-400">Estudante de Psicologia - UFPB</p>
+                </div>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://lattes.cnpq.br/8623038555393354" target="_blank" class="text-gray-400 hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-book text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-almeida-4712a3235" target="_blank" class="text-gray-400 hover:text-yellow-300 transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com/pedroalmeida.psi" target="_blank" class="text-gray-400 hover:text-yellow-300 transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="mailto:psi.phan@gmail.com" class="text-gray-400 hover:text-yellow-300 transition-colors">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+                <div class="border-t border-white/20 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 - Desenvolvido por Pedro Almeida. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+        <div class="card-bg rounded-lg p-8 max-w-md w-full border border-white/20">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-white">Enviar Mensagem</h3>
+                <button onclick="hideContactForm()" class="text-gray-400 hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-gray-300 text-sm font-medium mb-2">Nome</label>
+                    <input type="text" class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label class="block text-gray-300 text-sm font-medium mb-2">Email</label>
+                    <input type="email" class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400" placeholder="seu@email.com">
+                </div>
+                <div>
+                    <label class="block text-gray-300 text-sm font-medium mb-2">Mensagem</label>
+                    <textarea rows="4" class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400" placeholder="Sua mensagem..."></textarea>
+                </div>
+                <div class="bg-yellow-400/10 border border-yellow-400/30 rounded-lg p-3">
+                    <p class="text-yellow-300 text-xs">
+                        <i class="fas fa-info-circle mr-1"></i>
+                        Este é um formulário demonstrativo. Para contato real, utilize as informações da universidade.
+                    </p>
+                </div>
+                <button type="button" class="w-full bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-3 rounded-lg transition-colors">
+                    Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function showContactForm() {
+            document.getElementById('contact-modal').classList.remove('hidden');
+        }
+
+        function hideContactForm() {
+            document.getElementById('contact-modal').classList.add('hidden');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('backdrop-blur-lg');
+            } else {
+                nav.classList.remove('backdrop-blur-lg');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96af1c77f0d4da2e',t:'MTc1NDQ4OTM1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
